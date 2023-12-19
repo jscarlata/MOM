@@ -16,7 +16,7 @@ public class WarehouseController {
   @RequestMapping("/center")
   public String warehouseMain() {
     String mainPage =
-        "Warehouse Center"
+        "<h1>Warehouse Center</h1></br>"
         +
         "<a href='http://localhost:8080/center/data'>Show Data</a><br/>";
     return mainPage;

@@ -30,7 +30,7 @@ public class Registration {
                                         ActiveMQConnection.DEFAULT_PASSWORD,
                                         ActiveMQConnection.DEFAULT_BROKER_URL);
       connectionFactory.setTrustedPackages(
-          List.of("tgm.aahuja.warehouse.model", "java.util"));
+          List.of("tgm.jscarlata.warehouse.model", "java.util"));
       connection = connectionFactory.createConnection();
       connection.start();
       session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);

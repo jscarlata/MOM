@@ -44,7 +44,7 @@ public class WarehouseController {
     return service.getWarehouseData(inID);
   }
 
-  @RequestMapping("/warehouse/{inID}/sendData")
+  @RequestMapping("/warehouse/{inID}/send")
   public String sendData(@PathVariable String inID) {
     registration.sendMessage("Warehouse" + inID);
     MOMSender sender = new MOMSender("Warehouse" + inID);
@@ -52,7 +52,7 @@ public class WarehouseController {
     System.out.println(data.getTimestamp());
     sender.sendMessage(data);
     sender.stop();
-    return "Data sent.";
+    return "The data has been sent to the central.";
   }
 
   @RequestMapping("/warehouse/{inID}/transfer")
