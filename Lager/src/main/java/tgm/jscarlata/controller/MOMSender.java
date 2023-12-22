@@ -66,6 +66,7 @@ public class MOMSender {
 
       ObjectMessage message = session.createObjectMessage(obj);
       producer.send(message);
+      System.out.println("Message sent");
     } catch (JMSException e) {
       e.printStackTrace();
     }

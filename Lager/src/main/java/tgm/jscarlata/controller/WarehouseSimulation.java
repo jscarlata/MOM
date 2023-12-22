@@ -1,4 +1,4 @@
-package tgm.jscarlata.controller;;
+package tgm.jscarlata.controller;
 
 import tgm.jscarlata.model.Product;
 import tgm.jscarlata.model.WarehouseData;

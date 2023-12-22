@@ -1,4 +1,4 @@
-package tgm.jscarlata.controller;;
+package tgm.jscarlata.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
